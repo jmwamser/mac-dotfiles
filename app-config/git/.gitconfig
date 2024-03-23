@@ -1,0 +1,41 @@
+; DEFAULT USER CONFIG IF NOT IN SPECIFIC DIRECTORY
+[user]
+	email = jmwamser@me.com
+	name = Jordan Wamser
+
+; INCLUDE USER SETTING BASED ON DIRECTORY LOCATION
+[includeIf "gitdir:~/Projects/RedPandaCoding/"]
+    path = .gitconfig-rpc
+
+[core]
+	autocrlf = input
+	
+[color]
+	ui = true
+	
+[alias]
+	stats = status
+	cm = commit -m
+	co = checkout
+	cob = checkout -b
+	up = !git pull --ff-only
+	undo = reset HEAD~1 --mixed
+	nah = reset --hard HEAD
+	
+; Not convencied i want to turn this on yet
+; [credential]
+; 	helper = osxkeychain
+
+[init]
+	defaultBranch = main
+	
+[credential "https://github.com"]
+	helper = 
+;	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+;	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = !/usr/local/bin/gh auth git-credential
+[pull]
+	rebase = false
