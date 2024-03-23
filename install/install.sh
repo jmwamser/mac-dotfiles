@@ -78,4 +78,4 @@ brew update
 # Install all our dependencies with bundle (See Brewfile)
 echo "Loading Brewfile"
 brew tap homebrew/bundle
-brew bundle --file ./Brewfile
+brew bundle --file $DOTFILES_REPO/Brewfile
