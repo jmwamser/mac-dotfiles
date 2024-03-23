@@ -1,0 +1,36 @@
+#!/usr/bin/env zsh
+#
+#
+#     /\                
+#    /  \   _ __  _ __  
+#   / /\ \ | '_ \| '_ \ 
+#  / ____ \| |_) | |_) |
+# /_/    \_\ .__/| .__/ 
+#          | |   | |    
+#          |_|   |_|    
+#
+
+# Save the current working directory to a variable
+original_dir=$(pwd)
+
+# Initialize Zsh's completion system
+autoload -Uz compinit
+compinit
+
+# Some useful constants
+export DOTFILES=$HOME/.dotfiles
+export BOOTSTRAP=$DOTFILES/bootstrap
+export CONFIG=$DOTFILES/config
+export APP_CONFIG=$DOTFILES/app-config
+export PROJECT_DIR=$HOME/Projects
+
+#autoload -Uz compinit
+#compinit
+
+# Build our paths
+source $BOOTSTRAP/utils/path-builder
+
+# Source all files in the 'sourced' directory
+for file in $DOTFILES/sourced/*; do
+   source "$file"
+done
