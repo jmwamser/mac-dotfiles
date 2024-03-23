@@ -1,0 +1,22 @@
+#!/usr/bin/env zsh
+
+#
+#  _____        _    __ _ _           
+# |  __ \      | |  / _(_) |          
+# | |  | | ___ | |_| |_ _| | ___  ___ 
+# | |  | |/ _ \| __|  _| | |/ _ \/ __|
+# | |__| | (_) | |_| | | | |  __/\__ \
+# |_____/ \___/ \__|_| |_|_|\___||___/
+#                                    
+                                    
+# Set up our entire dotfiles system
+source "$HOME/.dotfiles/bootstrap/app"
+
+# Path to your oh-my-zsh installation.
+ export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="powerlevel10k/powerlevel10k"
