@@ -6,13 +6,8 @@ echo "Setting up your Mac..."
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-  ## M# Chip Setup
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-
-  ## Intel Setup
-  # (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> $HOME/.zprofile
-  # eval "$(/usr/local/bin/brew shellenv)"
+  echo 'eval "$('$(brew --prefix)'/bin/brew shellenv)"' >> $HOME/.zprofile
+  eval "$($(brew --prefix)/bin/brew shellenv)"
 fi
 
 # Check for Oh My Zsh and install if we don't have it
