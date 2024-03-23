@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+#  ______                       _       
+# |  ____|                     | |      
+# | |__  __  ___ __   ___  _ __| |_ ___ 
+# |  __| \ \/ / '_ \ / _ \| '__| __/ __|
+# | |____ >  <| |_) | (_) | |  | |_\__ \
+# |______/_/\_\ .__/ \___/|_|   \__|___/
+#             | |                       
+#             |_|                       
+#
+
+export HOMEBREW_NO_ANALYTICS=1
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
