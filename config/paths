@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+declare -a CUSTOM_PATHS
+
+CUSTOM_PATHS=(
+	$HOME/.jetbrains
+	$(brew --prefix)/bin
+	$(brew --prefix)/sbin
+	$(brew --prefix)/Cellar
+	${DOTFILES}/bin
+	$(brew --prefix)/opt/make/libexec/gnubin
+	${HOME}/.composer/vendor/bin
+)
