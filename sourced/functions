@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+# Function to apply chmod +x to all files in a directory
+chmodx_all_files_in_directory() {
+    local directory=$1
+
+    # Check if the directory exists
+    if [[ -d $directory ]]; then
+        for file in "$directory"/*; do
+            # Check if it's a file and not a directory
+            if [[ -f $file ]]; then
+                chmod +x "$file"
+                echo "Applied chmod +x to $file"
+            fi
+        done
+    else
+        echo "Directory not found: $directory"
+    fi
+}
