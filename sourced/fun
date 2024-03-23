@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+# Add FMN for node managment
+eval "$(fnm env --use-on-cd)"
