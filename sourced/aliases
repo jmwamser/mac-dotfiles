@@ -1,0 +1,59 @@
+#!/usr/bin/env zsh
+
+#        _ _                     
+#       | (_)                    
+#   __ _| |_  __ _ ___  ___  ___ 
+#  / _` | | |/ _` / __|/ _ \/ __|
+# | (_| | | | (_| \__ \  __/\__ \
+#  \__,_|_|_|\__,_|___/\___||___/
+#
+
+# ZSH
+alias _zshrc="source $HOME/.zshrc"
+alias chmodxall='chmodx_all_files_in_directory'
+alias _exe="echo 'Updating execute permissions on bin files...' && chmodxall $DOTFILES/bin && echo 'Update Complete'"
+
+
+# git
+alias nah="git nah"
+
+# Switch to dir and open in editor
+alias editdot="fleet $DOTFILES"
+alias dot="editdot"
+alias edot="editdot"
+
+# Laravel
+#alias artisan="php artisan"
+#alias art="php artisan"
+
+# Symfony
+alias console="symfony console"
+alias xconsole="XDEBUG_SESSION=INTELLIJ symfony console"
+alias composer="symfony composer"
+alias serve="symfony serve -d"
+alias serve:stop="symfony server:stop"
+alias serve:list="symfony server:list"
+
+# Codeception
+alias codecept="symfony php vendor/bin/codecept"
+
+# Composer
+alias ci="composer install"
+alias cr="composer require"
+#alias cpc="composer precommit"
+#alias dump="composer dump"
+alias cra="composer auto-scripts"
+
+# Makefile
+alias m="make"
+
+# PHP
+alias php="symfony php"
+
+# Arsenal - My binary
+alias roy="arsenal"
+alias ra="arsenal"
+
+# Path Locations
+alias prjd="echo $PROJECT_DIR"
+alias rpcd="echo $PROJECT_DIR/RedPandaCoding"
