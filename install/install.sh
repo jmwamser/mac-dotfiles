@@ -24,6 +24,8 @@ DOTFILES_REPO="$HOME/.dotfiles"
 if [ ! -d "$DOTFILES_REPO" ]; then
     echo "Cloning dotfiles..."
     git clone git@github.com:jmwamser/mac-dotfiles.git "$DOTFILES_REPO"
+else
+    git -C "$DOTFILES_REPO" 
 fi
 
 # Set execute permissions on all files in the bin directory
