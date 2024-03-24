@@ -25,7 +25,7 @@ if [ ! -d "$DOTFILES_REPO" ]; then
     echo "Cloning dotfiles..."
     git clone git@github.com:jmwamser/mac-dotfiles.git "$DOTFILES_REPO"
 else
-    git -C "$DOTFILES_REPO" 
+    git -C "$DOTFILES_REPO" pull --ff-only
 fi
 
 # Set execute permissions on all files in the bin directory
