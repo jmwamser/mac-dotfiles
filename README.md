@@ -24,7 +24,7 @@ After backing up your old Mac you may now follow these install instructions to s
    ```
 4. Run the Install script to get going
    ```zsh
-   /bin/bash -c HOMEBREW_ACCEPT_EULA=Y "$(curl -fsSL https://raw.githubusercontent.com/jmwamser/mac-dotfiles/main/install/install.sh)"
+   HOMEBREW_ACCEPT_EULA=Y /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jmwamser/mac-dotfiles/main/install/install.sh)"
    ```
 5. Restart your computer to finalize the process
    
