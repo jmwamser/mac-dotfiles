@@ -1,7 +1,7 @@
 tap "box-project/box"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "microsoft/mssql-release"
+tap "microsoft/mssql-release", "https://github.com/Microsoft/homebrew-mssql-release"
 tap "shivammathur/extensions"
 tap "shivammathur/php"
 tap "symfony-cli/tap"
