@@ -69,10 +69,6 @@ echo "Git setup complete!"
 #echo "Installing fonts"
 #cp -a $HOME/dotfiles/install/assets/fonts/. ~/Library/Fonts/
 
-# Update Source
-echo "Sourcing ZSHRC"
-source "$HOME/.zshrc"
-
 # Update Homebrew recipes
 echo "Updating Brew"
 brew update
@@ -81,3 +77,7 @@ brew update
 echo "Loading Brewfile"
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES_REPO/app-config/brew/Brewfile
+
+# Update Source
+echo "Sourcing ZSHRC"
+source "$HOME/.zshrc"
