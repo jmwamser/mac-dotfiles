@@ -11,6 +11,7 @@
                                     
 # Set up our entire dotfiles system
 source "$HOME/.dotfiles/bootstrap/app"
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # Path to your oh-my-zsh installation.
  export ZSH="$HOME/.oh-my-zsh"
@@ -20,3 +21,8 @@ source "$HOME/.dotfiles/bootstrap/app"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
