@@ -17,3 +17,10 @@ chmodx_all_files_in_directory() {
         echo "Directory not found: $directory"
     fi
 }
+
+#Zeek:list() {
+#    for entry in "$search_dir"/*
+#    do
+#        echo "$entry"
+#    done
+#}

@@ -23,13 +23,13 @@ alias dot="editdot"
 alias edot="editdot"
 
 # Laravel
-#alias artisan="php artisan"
-#alias art="php artisan"
+alias artisan="php artisan"
+alias art="php artisan"
 
 # Symfony
 alias console="symfony console"
 alias xconsole="XDEBUG_SESSION=INTELLIJ symfony console"
-alias composer="symfony composer"
+#alias composer="symfony composer"
 alias serve="symfony serve -d"
 alias serve:stop="symfony server:stop"
 alias serve:list="symfony server:list"
@@ -48,12 +48,16 @@ alias cra="composer auto-scripts"
 alias m="make"
 
 # PHP
-alias php="symfony php"
+#alias php="symfony php"
 
 # Arsenal - My binary
-alias roy="arsenal"
-alias ra="arsenal"
+#alias roy="arsenal"
+#alias ra="arsenal"
 
 # Path Locations
 alias prjd="echo $PROJECT_DIR"
 alias rpcd="echo $PROJECT_DIR/RedPandaCoding"
+alias Zeek="echo $PROJECT_DIR/Zeek"
+#alias Zeek:z="cd $(Zeek)"
+alias Zeek:mcode="cd $(Zeek)/MotivationCode/Sites/motivation-code"
+
