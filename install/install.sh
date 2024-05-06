@@ -66,8 +66,8 @@ git config --global core.excludesfile "$HOME/.gitignore_global"
 echo "Git setup complete!"
 
 # Installing fonts
-#echo "Installing fonts"
-#cp -a $HOME/dotfiles/install/assets/fonts/. ~/Library/Fonts/
+echo "Installing fonts"
+cp -a $HOME/dotfiles/install/assets/fonts/. ~/Library/Fonts/
 
 # Update Homebrew recipes
 echo "Updating Brew"

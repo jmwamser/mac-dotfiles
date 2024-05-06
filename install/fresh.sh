@@ -8,6 +8,8 @@ if test ! $(which brew); then
 
   echo 'eval "$('$(brew --prefix)'/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$($(brew --prefix)/bin/brew shellenv)"
+
+  brew install git
 fi
 
 # Check for Oh My Zsh and install if we don't have it
