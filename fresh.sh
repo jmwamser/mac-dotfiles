@@ -6,6 +6,8 @@ echo "Setting up your Mac..."
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+  export PATH=$PATH:/opt/homebrew/bin
+
   echo 'eval "$('$(brew --prefix)'/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$($(brew --prefix)/bin/brew shellenv)"
 
