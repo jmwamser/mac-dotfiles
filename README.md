@@ -16,7 +16,7 @@ After backing up your old Mac you may now follow these install instructions to s
    2.2. Otherwise [generate a new public and private SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) by running:
 
    ```zsh
-   curl https://raw.githubusercontent.com/jmwamser/mac-dotfiles/main/ssh.sh | sh -s "<your-email-address>"
+   curl https://raw.githubusercontent.com/jmwamser/mac-dotfiles/main/install/ssh.sh | sh -s "<your-email-address>"
    ```
 3. Run the Fresh install script
    ```zsh
